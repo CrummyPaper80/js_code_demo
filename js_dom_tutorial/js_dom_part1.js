@@ -19,31 +19,31 @@
 
 // List all properties and methods of document object
 
-// console.dir(document);
+//console.dir(document);
 
 // Checking out some document properties
-/*
-console.log(document.domain);
-console.log(document.URL);
-console.log(document.title);
-console.log(document.doctype);
-console.log(document.head);
-console.log(document.body);
-console.log(document.forms);
-console.log(document.images); // and many more 
+
+//console.log(document.domain);
+//console.log(document.URL);
+//console.log(document.title);
+//console.log(document.doctype);
+//console.log(document.head);
+//console.log(document.body);
+//console.log(document.forms);
+//console.log(document.images); // and many more 
 //console.log(document.links);
 // Dynamic changes without touching html
 // Following will change the title of your page
 // document.title = 'testing changes';
-*/
+
 
 
 
 // Section 2: Query the DOM - selectors 
 
 // getElementById()
-// let headerTitle = document.getElementById('header-title');
-//console.log(headerTitle);
+let headerTitle = document.getElementById('header-title');
+console.log(headerTitle);
 // console.log(document.getElementById('header-title'));
 
 // Change content dynamically using .textContent 
@@ -58,16 +58,16 @@ console.log(document.images); // and many more
 // <span style="display:none"> Peek-a-boo</span>
 // Now run the following code 
 
-//console.log(headerTitle.textContent); // You'll notice the hidden text. textContent ignores styling
+// console.log(headerTitle.textContent); // You'll notice the hidden text. textContent ignores styling
 
 // However if you run the following: 
-//console.log(headerTitle.innerText); // You'll see that is accepts styling
+// console.log(headerTitle.innerText); // You'll see that is accepts styling
 
 
 // .innerHTML ==> put some element inside another DOM element
 // The following code puts and h5 tag inside the h1 tag
 
-//headerTitle.innerHTML = '<h5> Hello in h5 inside h1 tag </h5>';
+headerTitle.innerHTML = '<h5> Hello in h5 inside h1 tag </h5>';
 
 /******************************************** */
 // Change CSS Styles
